@@ -15,7 +15,7 @@ class PagesGateChecker
         if (array_key_exists($page, config('laravel-pages.pages'))) {
             switch (config("laravel-pages.pages.$page.auth.gate")) {
                 case Gate::LoggedIn:
-                    if (! auth()->check()) {
+                    if (auth()->guest()) {
                         if (config("laravel-pages.pages.$page.auth.alternative")) {
                             return redirect(config("laravel-pages.pages.$page.auth.alternative"));
                         }
