@@ -8,7 +8,7 @@ class PagesController extends Controller
 {
     public function show(string $page = 'index')
     {
-        return view('laravel-welcome-page::welcome-page.index', [
+        return view('laravel-pages::pages.index', [
             'page' => $page,
         ]);
     }
