@@ -1,0 +1,12 @@
+<?php
+
+return [
+
+    'testimonial_1_title' => 'testimonial_1_title',
+    'testimonial_1_author' => 'testimonial_1_author',
+    'testimonial_2_title' => 'testimonial_2_title',
+    'testimonial_2_author' => 'testimonial_2_author',
+    'testimonial_3_title' => 'testimonial_3_title',
+    'testimonial_3_author' => 'testimonial_3_author',
+
+];
