@@ -1,4 +1,6 @@
 <x-guest-layout>
+    <x-laravel-seo::title title="{{ $page }}.title" />
+
     @if(config("laravel-pages.pages.$page.sections.main"))
         <div
         x-data="{ lgHScreen: window.innerWidth / window.innerHeight < 2.2 }"
