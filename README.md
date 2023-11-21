@@ -1,4 +1,8 @@
 # Install
+### Before installation
+Before running composer copy a config file ```app/config/laravel-pages.php```.
+
+### Middleware
 Add PageGateChecker middleware to middleware array in *app/Http/Kernel.php*:
 ```php
   protected $middleware = [
@@ -6,44 +10,56 @@ Add PageGateChecker middleware to middleware array in *app/Http/Kernel.php*:
         \Atin\LaravelPages\Http\Middleware\PagesGateChecker::class,
     ];
 ```
-### Publish config
+
+### Folders
+For each page create a folder. For example, for ```index.php``` page create ```app/resources/views/pages/index``` folder.
+
+### Config
+#### Variables
+Specify main variables (main colors, etc.)
 ```php
-php artisan vendor:publish --tag="laravel-pages-config"
-```
-Select which variants of sections in you want. You can do it in *config/welcome-page.php*:
-```json
-'sections' => [
-    'main' => 'v1',
-    'others' => [
-        [
-            'name' => 'how-it-works',
-            'variant' => 'v1',
-        ],
-        [
-          'name' => 'call-to-action',
-          'variant' => 'v2',
-        ],
-```
-by specifying variants of sections and their orders.
-Also, choose primary and secondary colors and add their to safelist key in *tailwind.config.js*:
-```js
-safelist: [
-    'from-zinc-100',
-    'to-sky-300',
-    'text-sky-600',
-    'text-sky-300',
-    'bg-sky-600',
-    'bg-sky-300',
-    'bg-red-500',
-    'text-link',
-],
+'header_path' => 'layouts.header',
+    'footer_path' => 'layouts.footer',
+
+    // Colors; Add all values to tailwind.config.js as `safelist` under `module.exports`
+    'gradient_from' => 'from-zinc-100',
+    'gradient_to' => 'to-emerald-300',
+
+    'text_color_primary' => 'text-emerald-400',
+    'text_color_secondary' => 'text-emerald-200',
+
+    'bg_color_primary' => 'bg-emerald-400',
+    'bg_color_secondary' => 'bg-emerald-200',
+
+    'color_primary_hex' => '#34d399',
+    'color_secondary_hex' => '#a7f3d0',
+
+    'main_button_color' => 'bg-gray-950',
+…
 ```
 
-### Publish localization
+#### Pages
+Specify which sections your page contain.
 ```php
-php artisan vendor:publish --tag="laravel-pages-lang"
+…
+'pages' => [
+    'index' => [
+        'sections' => [
+            'main' => [
+                'name' => 'main',
+            ],
+            'others' => [
+                [
+                    'name' => 'how-it-works',
+                ],
+                [
+                    'name' => 'stats',
+                ],
+            ]
+        ]
+    ]
+…
 ```
-Add local strings in *lang/vendor/welcome-page/en/<section-name-variant>.php* for selected sections.
 
 # Publishing
 ### Localization

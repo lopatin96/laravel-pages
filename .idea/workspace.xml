@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="laravel-pages">
+    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="fixed testimonials v1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/testimonials/v1/testimonial-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/testimonials/v1/testimonial-card.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Middleware/PagesGateChecker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Middleware/PagesGateChecker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +229,7 @@
       <workItem from="1700400025328" duration="192000" />
       <workItem from="1700400232620" duration="121000" />
       <workItem from="1700400358883" duration="18000" />
-      <workItem from="1700400378326" duration="4003000" />
+      <workItem from="1700400378326" duration="14292000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1681077709690</created>
@@ -515,7 +512,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700418607956</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fixed testimonials v1">
+      <option name="closed" value="true" />
+      <created>1700422034631</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1700422034631</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +541,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="faq-v1" />
     <MESSAGE value="pricing-v2" />
     <MESSAGE value="use config" />
     <MESSAGE value="pricing-v3" />
@@ -561,6 +565,7 @@
     <MESSAGE value="scroll button bottom" />
     <MESSAGE value="fixed lg:h-screen" />
     <MESSAGE value="laravel-pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="laravel-pages" />
+    <MESSAGE value="fixed testimonials v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed testimonials v1" />
   </component>
 </project>
