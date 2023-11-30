@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="readme" />
+    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="seo-title">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/faq/v1/faq-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/faq/v1/faq-card.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,6 +230,8 @@
       <workItem from="1700400232620" duration="121000" />
       <workItem from="1700400358883" duration="18000" />
       <workItem from="1700400378326" duration="14303000" />
+      <workItem from="1700527585154" duration="853000" />
+      <workItem from="1701368273760" duration="361000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1681077709690</created>
@@ -525,7 +530,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700525843303</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="seo-title">
+      <option name="closed" value="true" />
+      <created>1700527806577</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1700527806577</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,7 +559,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="pricing-v2" />
     <MESSAGE value="use config" />
     <MESSAGE value="pricing-v3" />
     <MESSAGE value="pricing-v4" />
@@ -571,6 +583,7 @@
     <MESSAGE value="laravel-pages" />
     <MESSAGE value="fixed testimonials v1" />
     <MESSAGE value="readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+    <MESSAGE value="seo-title" />
+    <option name="LAST_COMMIT_MESSAGE" value="seo-title" />
   </component>
 </project>
