@@ -14,8 +14,11 @@ class PagesProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-pages');
+
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'laravel-pages');
+
         $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-pages');
 
         $this->publishes([
