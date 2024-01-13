@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="seo-title">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/faq/v1/faq-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/faq/v1/faq-card.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="readme" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -538,7 +535,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700527806577</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="fixed order in boot method">
+      <option name="closed" value="true" />
+      <created>1705162024604</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1705162024604</updated>
+    </task>
+    <task id="LOCAL-00044" summary="readme">
+      <option name="closed" value="true" />
+      <created>1705162237292</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1705162237292</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +572,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="use config" />
     <MESSAGE value="pricing-v3" />
     <MESSAGE value="pricing-v4" />
     <MESSAGE value="pricing-v5" />
@@ -582,8 +594,9 @@
     <MESSAGE value="fixed lg:h-screen" />
     <MESSAGE value="laravel-pages" />
     <MESSAGE value="fixed testimonials v1" />
-    <MESSAGE value="readme" />
     <MESSAGE value="seo-title" />
-    <option name="LAST_COMMIT_MESSAGE" value="seo-title" />
+    <MESSAGE value="fixed order in boot method" />
+    <MESSAGE value="readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme" />
   </component>
 </project>
