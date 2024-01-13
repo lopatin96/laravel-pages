@@ -1,7 +1,4 @@
 # Install
-### Before installation
-Before running composer copy a config file ```app/config/laravel-pages.php```.
-
 ### Middleware
 Add PageGateChecker middleware to middleware array in *app/Http/Kernel.php*:
 ```php
