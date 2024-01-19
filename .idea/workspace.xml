@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="readme" />
+    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="moved local files to index folder">
+      <change afterPath="$PROJECT_DIR$/src/Http/Middleware/PageVariant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,12 +190,19 @@
       <recent name="$PROJECT_DIR$/lang/en" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lang/en/index" />
       <recent name="$PROJECT_DIR$/resources/views/welcome/main/v1" />
       <recent name="$PROJECT_DIR$/resources/views/welcome/main" />
       <recent name="$PROJECT_DIR$/resources/views/welcome/how-it-works/v1" />
       <recent name="$PROJECT_DIR$/resources/views/welcome/faq/v1" />
-      <recent name="$PROJECT_DIR$/resources/views/welcome/testimonials/v1" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-b4dcf6bb9de9-com.jetbrains.php.sharedIndexes-PS-233.13135.108" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -229,6 +241,10 @@
       <workItem from="1700400378326" duration="14303000" />
       <workItem from="1700527585154" duration="853000" />
       <workItem from="1701368273760" duration="361000" />
+      <workItem from="1705173620196" duration="49000" />
+      <workItem from="1705173887266" duration="8000" />
+      <workItem from="1705232100317" duration="2603000" />
+      <workItem from="1705691774089" duration="5313000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1681077709690</created>
@@ -551,7 +567,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705162237292</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="moved local files to index folder">
+      <option name="closed" value="true" />
+      <created>1705173664277</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1705173664277</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,7 +596,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="pricing-v3" />
     <MESSAGE value="pricing-v4" />
     <MESSAGE value="pricing-v5" />
     <MESSAGE value="pricing-v4 fix" />
@@ -597,6 +620,7 @@
     <MESSAGE value="seo-title" />
     <MESSAGE value="fixed order in boot method" />
     <MESSAGE value="readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+    <MESSAGE value="moved local files to index folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved local files to index folder" />
   </component>
 </project>

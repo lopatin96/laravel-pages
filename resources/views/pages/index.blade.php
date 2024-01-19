@@ -1,6 +1,13 @@
 <x-guest-layout>
     <x-laravel-seo::title title="{{ $page }}.title" />
 
+    @php
+        if ($variant = request()->get('variant') ?? request()->cookie('variant')) {
+            $variantPrefix = $variant . '-';
+        }
+    @endphp
+
+
     @if(config("laravel-pages.pages.$page.sections.main"))
         <div
         x-data="{ lgHScreen: window.innerWidth / window.innerHeight < 2.2 }"
@@ -9,7 +16,16 @@
         :class="{'lg:h-screen': lgHScreen}"
         >
             @include(config('laravel-pages.header_path'), ['showLinks' => true])
-            @include("pages.$page." . config("laravel-pages.pages.$page.sections.main.name"))
+
+            @if(
+                isset($variant)
+                && array_key_exists('variants', config("laravel-pages.pages.$page.sections.main"))
+                && in_array($variant, config("laravel-pages.pages.$page.sections.main.variants"))
+            )
+                @include("pages.$page.$variantPrefix" . config("laravel-pages.pages.$page.sections.main.name"))
+            @else
+                @include("pages.$page." . config("laravel-pages.pages.$page.sections.main.name"))
+            @endif
         </div>
     @else
         @include(config('laravel-pages.header_path'), ['showLinks' => true])
@@ -21,7 +37,15 @@
             || ($section['auth']['gate'] === \Atin\LaravelPages\Enums\Gate::LoggedIn && auth()->check())
             || ($section['auth']['gate'] === \Atin\LaravelPages\Enums\Gate::LoggedOut && auth()->guest())
         )
-            @include("pages.$page.{$section['name']}")
+            @if(
+                isset($variant)
+                && array_key_exists('variants', $section)
+                && in_array($variant, $section['variants'])
+            )
+                @include("pages.$page.$variantPrefix{$section['name']}")
+            @else
+                @include("pages.$page.{$section['name']}")
+            @endif
        @endif
     @endforeach
 
