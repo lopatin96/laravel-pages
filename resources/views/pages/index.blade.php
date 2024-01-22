@@ -41,8 +41,8 @@
             @if(
                 ! array_key_exists('hideWhenVariants', $section)
                 || (
-                    isset($variant)
-                    && ! in_array($variant, $section['hideWhenVariants'])
+                    is_null($variant)
+                    || ! in_array($variant, $section['hideWhenVariants'])
                 )
             )
                 @if(
