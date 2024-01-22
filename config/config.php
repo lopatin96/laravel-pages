@@ -3,7 +3,7 @@
 use Atin\LaravelPages\Enums\Gate;
 
 return [
-    'variant_cookie_life_in_minutes' => 43200,
+    'cookie_life_in_minutes' => 43200,
 
     'header_path' => 'layouts.header',
     'footer_path' => 'layouts.footer',

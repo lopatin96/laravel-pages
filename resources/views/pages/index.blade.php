@@ -2,9 +2,11 @@
     <x-laravel-seo::title title="{{ $page }}.title" />
 
     @php
-        if ($variant = request()->get('variant') ?? request()->cookie('variant')) {
+        if ($variant = request()->get('variant') ?? request()->cookie('page_variant')) {
             $variantPrefix = $variant . '-';
         }
+
+        $keyword = request()->get('keyword') ?? request()->cookie('page_keyword');
     @endphp
 
 
