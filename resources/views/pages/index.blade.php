@@ -9,7 +9,6 @@
         $keyword = request()->get('keyword') ?? request()->cookie('page_keyword');
     @endphp
 
-
     @if(config("laravel-pages.pages.$page.sections.main"))
         <div
         x-data="{ lgHScreen: window.innerWidth / window.innerHeight < 2.2 }"
@@ -40,13 +39,21 @@
             || ($section['auth']['gate'] === \Atin\LaravelPages\Enums\Gate::LoggedOut && auth()->guest())
         )
             @if(
-                isset($variant)
-                && array_key_exists('variants', $section)
-                && in_array($variant, $section['variants'])
+                ! array_key_exists('hideWhenVariants', $section)
+                || (
+                    isset($variant)
+                    && ! in_array($variant, $section['hideWhenVariants'])
+                )
             )
-                @include("pages.$page.$variantPrefix{$section['name']}")
-            @else
-                @include("pages.$page.{$section['name']}")
+                @if(
+                    isset($variant)
+                    && array_key_exists('variants', $section)
+                    && in_array($variant, $section['variants'])
+                )
+                    @include("pages.$page.$variantPrefix{$section['name']}")
+                @else
+                    @include("pages.$page.{$section['name']}")
+                @endif
             @endif
        @endif
     @endforeach
