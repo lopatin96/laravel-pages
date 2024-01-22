@@ -5,6 +5,7 @@ Add PageGateChecker middleware to middleware array in *app/Http/Kernel.php*:
   protected $middleware = [
         …
         \Atin\LaravelPages\Http\Middleware\PagesGateChecker::class,
+        \Atin\LaravelPages\Http\Middleware\PersonalisedPage::class,
     ];
 ```
 
