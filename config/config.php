@@ -49,6 +49,7 @@ return [
                     ],
                     [
                         'name' => 'feature-types',
+//                        'hideWhenVariants' => ['variant-2']
                     ],
                     [
                         'name' => 'call-to-action',
