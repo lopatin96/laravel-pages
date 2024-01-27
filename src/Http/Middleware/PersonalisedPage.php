@@ -9,17 +9,23 @@ class PersonalisedPage
 {
     public function handle(Request $request, Closure $next): mixed
     {
+        $cookieLifeInMinutes = config('laravel-pages.cookie_life_in_minutes', 43200);
+
         if (request()->is('/')) {
-            if (request()->has('lang')) {
-                cookie()->queue(cookie('page_lang', request()->get('lang'), config('laravel-pages.cookie_life_in_minutes', 43200)));
+            if (request()->has('country')) {
+                cookie()->queue(cookie('country', request()->get('country'), $cookieLifeInMinutes));
+            }
+
+            if (request()->has('country') && array_key_exists(request()->get('country'), config('laravel-lang-switcher.languages'))) {
+                cookie()->queue(cookie('locale', request()->get('country'), $cookieLifeInMinutes));
             }
 
             if (request()->has('variant')) {
-                cookie()->queue(cookie('page_variant', request()->get('variant'), config('laravel-pages.cookie_life_in_minutes', 43200)));
+                cookie()->queue(cookie('variant', request()->get('variant'), $cookieLifeInMinutes));
             }
 
             if (request()->has('keyword')) {
-                cookie()->queue(cookie('page_keyword', request()->get('keyword'), config('laravel-pages.cookie_life_in_minutes', 43200)));
+                cookie()->queue(cookie('keyword', request()->get('keyword'), $cookieLifeInMinutes));
             }
         }
 

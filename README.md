@@ -1,4 +1,9 @@
 # Install
+### Migrations
+Run migrations:
+```php
+php artisan migrate
+```
 ### Middleware
 Add PageGateChecker middleware to middleware array in *app/Http/Kernel.php*:
 ```php
@@ -60,6 +65,11 @@ Specify which sections your page contain.
 ```
 
 # Publishing
+### Migrations
+```php
+php artisan vendor:publish --tag="laravel-pages-migrations"
+```
+
 ### Localization
 ```php
 php artisan vendor:publish --tag="laravel-pages-lang"

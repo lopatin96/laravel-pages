@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="variants">
+    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="fixed hideWhenVariants">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2024_01_27_002058_add_country_variant_keyword_to_users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Middleware/PersonalisedPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Middleware/PersonalisedPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PagesProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PagesProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,10 +185,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/Http" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/resources/views/welcome-page/main/v1" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/lang/en" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -243,6 +248,7 @@
       <workItem from="1705232100317" duration="2603000" />
       <workItem from="1705691774089" duration="7465000" />
       <workItem from="1705944256083" duration="5416000" />
+      <workItem from="1706135434549" duration="6447000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1681077709690</created>
@@ -581,7 +587,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705705113641</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="hideWhenVariants">
+      <option name="closed" value="true" />
+      <created>1705965324215</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1705965324215</updated>
+    </task>
+    <task id="LOCAL-00048" summary="fixed hideWhenVariants">
+      <option name="closed" value="true" />
+      <created>1705967039961</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1705967039961</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,8 +624,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="pricing-v5" />
-    <MESSAGE value="pricing-v4 fix" />
     <MESSAGE value="testimonials-v2" />
     <MESSAGE value="testimonials-v3" />
     <MESSAGE value="call-to-action-v2" />
@@ -627,6 +647,8 @@
     <MESSAGE value="readme" />
     <MESSAGE value="moved local files to index folder" />
     <MESSAGE value="variants" />
-    <option name="LAST_COMMIT_MESSAGE" value="variants" />
+    <MESSAGE value="hideWhenVariants" />
+    <MESSAGE value="fixed hideWhenVariants" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed hideWhenVariants" />
   </component>
 </project>

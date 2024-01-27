@@ -13,6 +13,8 @@ class PagesProvider extends ServiceProvider
 
     public function boot()
     {
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+
         $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-pages');
 
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
@@ -20,6 +22,10 @@ class PagesProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-pages');
 
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'laravel-pages');
+
+        $this->publishes([
+            __DIR__.'/../database/migrations' => database_path('/migrations')
+        ], 'laravel-pages-migrations');
 
         $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views/vendor/laravel-pages')
