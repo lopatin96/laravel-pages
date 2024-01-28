@@ -20,6 +20,10 @@ class PersonalisedPage
                 cookie()->queue(cookie('locale', request()->get('country'), $cookieLifeInMinutes));
             }
 
+            if (request()->has('locale') && array_key_exists(request()->get('locale'), config('laravel-lang-switcher.languages'))) {
+                cookie()->queue(cookie('locale', request()->get('locale'), $cookieLifeInMinutes));
+            }
+
             if (request()->has('variant')) {
                 cookie()->queue(cookie('variant', request()->get('variant'), $cookieLifeInMinutes));
             }

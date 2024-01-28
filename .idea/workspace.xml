@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="fixed hideWhenVariants">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2024_01_27_002058_add_country_variant_keyword_to_users.php" afterDir="false" />
+    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="country, variant">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Http/Middleware/PersonalisedPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Middleware/PersonalisedPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PagesProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PagesProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +244,7 @@
       <workItem from="1705232100317" duration="2603000" />
       <workItem from="1705691774089" duration="7465000" />
       <workItem from="1705944256083" duration="5416000" />
-      <workItem from="1706135434549" duration="6447000" />
+      <workItem from="1706135434549" duration="8099000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1681077709690</created>
@@ -603,7 +599,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705967039961</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="country, variant">
+      <option name="closed" value="true" />
+      <created>1706380447365</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1706380447365</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +628,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="testimonials-v2" />
     <MESSAGE value="testimonials-v3" />
     <MESSAGE value="call-to-action-v2" />
     <MESSAGE value="call-to-action-v3" />
@@ -649,6 +652,7 @@
     <MESSAGE value="variants" />
     <MESSAGE value="hideWhenVariants" />
     <MESSAGE value="fixed hideWhenVariants" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed hideWhenVariants" />
+    <MESSAGE value="country, variant" />
+    <option name="LAST_COMMIT_MESSAGE" value="country, variant" />
   </component>
 </project>
