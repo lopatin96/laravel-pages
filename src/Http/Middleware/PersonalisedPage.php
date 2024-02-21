@@ -16,8 +16,8 @@ class PersonalisedPage
                 cookie()->queue(cookie('country', request()->get('country'), $cookieLifeInMinutes));
             }
 
-            if (request()->has('country') && array_key_exists(request()->get('country'), config('laravel-lang-switcher.languages'))) {
-                cookie()->queue(cookie('locale', request()->get('country'), $cookieLifeInMinutes));
+            if (request()->has('country') && request()->missing('locale') && array_key_exists(request()->get('country'), config('laravel-lang-switcher.countries_to_locales'))) {
+                cookie()->queue(cookie('locale', config('laravel-lang-switcher.countries_to_locales')[request()->get('country')], $cookieLifeInMinutes));
             }
 
             if (request()->has('locale') && array_key_exists(request()->get('locale'), config('laravel-lang-switcher.languages'))) {
