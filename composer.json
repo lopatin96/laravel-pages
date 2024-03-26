@@ -22,7 +22,8 @@
     }
   ],
   "require": {
-    "php": ">=8.0"
+    "php": ">=8.0",
+    "stevebauman/location": "^6.5"
   },
   "require-dev": {
     "orchestra/testbench": "^8.0"
