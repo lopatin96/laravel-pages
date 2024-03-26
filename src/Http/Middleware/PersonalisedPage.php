@@ -14,7 +14,7 @@ class PersonalisedPage
         $cookieLifeInMinutes = config('laravel-pages.cookie_life_in_minutes', 43200);
 
         if (request()->is('/')) {
-             if ($country = request()->has('country') ?: (is_object(Location::get($request->ip())) ? Str::lower(Location::get($request->ip())->countryCode) : null)) {
+             if ($country = request()->has('country') ? request()->get('country') : (is_object(Location::get($request->ip())) ? Str::lower(Location::get($request->ip())->countryCode) : null)) {
                 cookie()->queue(cookie('country', $country, $cookieLifeInMinutes));
             }
 
