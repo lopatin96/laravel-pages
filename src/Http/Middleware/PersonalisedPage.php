@@ -4,6 +4,8 @@ namespace Atin\LaravelPages\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Stevebauman\Location\Facades\Location;
+use Illuminate\Support\Str;
 
 class PersonalisedPage
 {
@@ -12,8 +14,8 @@ class PersonalisedPage
         $cookieLifeInMinutes = config('laravel-pages.cookie_life_in_minutes', 43200);
 
         if (request()->is('/')) {
-            if (request()->has('country')) {
-                cookie()->queue(cookie('country', request()->get('country'), $cookieLifeInMinutes));
+             if ($country = request()->has('country') ?: (is_object(Location::get($request->ip())) ? Str::lower(Location::get($request->ip())->countryCode) : null)) {
+                cookie()->queue(cookie('country', $country, $cookieLifeInMinutes));
             }
 
             if (request()->has('variant')) {
