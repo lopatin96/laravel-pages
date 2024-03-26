@@ -23,7 +23,7 @@ class PersonalisedPage
             }
 
             if (request()->has('keyword')) {
-                cookie()->queue(cookie('keyword', Str::lower(Str::limit(request()->get('keyword'), 32, '')), $cookieLifeInMinutes));
+                cookie()->queue(cookie('keyword', Str::lower(Str::limit(request()->get('keyword'), 64, '')), $cookieLifeInMinutes));
             }
         }
 
