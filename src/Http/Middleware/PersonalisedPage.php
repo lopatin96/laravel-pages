@@ -14,16 +14,16 @@ class PersonalisedPage
         $cookieLifeInMinutes = config('laravel-pages.cookie_life_in_minutes', 43200);
 
         if (request()->is('/')) {
-             if ($country = request()->has('country') ? request()->get('country') : (is_object(Location::get($request->ip())) ? Str::lower(Location::get($request->ip())->countryCode) : null)) {
-                cookie()->queue(cookie('country', $country, $cookieLifeInMinutes));
+             if ($country = request()->has('country') ? request()->get('country') : (is_object(Location::get($request->ip())) ? Location::get($request->ip())->countryCode : null)) {
+                cookie()->queue(cookie('country', Str::lower(Str::limit($country, 2, '')), $cookieLifeInMinutes));
             }
 
             if (request()->has('variant')) {
-                cookie()->queue(cookie('variant', request()->get('variant'), $cookieLifeInMinutes));
+                cookie()->queue(cookie('variant', Str::lower(Str::limit(request()->get('variant'), 32, '')), $cookieLifeInMinutes));
             }
 
             if (request()->has('keyword')) {
-                cookie()->queue(cookie('keyword', request()->get('keyword'), $cookieLifeInMinutes));
+                cookie()->queue(cookie('keyword', Str::lower(Str::limit(request()->get('keyword'), 32, '')), $cookieLifeInMinutes));
             }
         }
 
