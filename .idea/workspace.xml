@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="country, variant">
+    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="locale">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Middleware/PersonalisedPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Middleware/PersonalisedPage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +24,12 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="99f5f09c-d2cb-45bd-9e1f-060d406e9018" />
-        <option name="url" value="https://github.com/lopatin96/laravel-welcome-page.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/lopatin96/laravel-pages.git",
+    "accountId": "99f5f09c-d2cb-45bd-9e1f-060d406e9018"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -198,7 +195,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-php-predefined-ba97393d7c68-b4dcf6bb9de9-com.jetbrains.php.sharedIndexes-PS-233.13135.108" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PS-241.14494.237" />
+        <option value="bundled-php-predefined-ba97393d7c68-8f0632a2a215-com.jetbrains.php.sharedIndexes-PS-241.14494.237" />
       </set>
     </attachedChunks>
   </component>
@@ -244,7 +242,13 @@
       <workItem from="1705232100317" duration="2603000" />
       <workItem from="1705691774089" duration="7465000" />
       <workItem from="1705944256083" duration="5416000" />
-      <workItem from="1706135434549" duration="8099000" />
+      <workItem from="1706135434549" duration="9091000" />
+      <workItem from="1707773968415" duration="1892000" />
+      <workItem from="1708015428724" duration="24000" />
+      <workItem from="1711837248115" duration="638000" />
+      <workItem from="1712162744317" duration="47000" />
+      <workItem from="1712172628109" duration="602000" />
+      <workItem from="1713391060698" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1681077709690</created>
@@ -463,14 +467,6 @@
       <option name="project" value="LOCAL" />
       <updated>1681866108187</updated>
     </task>
-    <task id="LOCAL-00032" summary="fix route">
-      <option name="closed" value="true" />
-      <created>1693738556430</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1693738556430</updated>
-    </task>
     <task id="LOCAL-00033" summary="card_subbilled">
       <option name="closed" value="true" />
       <created>1695160601936</created>
@@ -607,7 +603,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706380447365</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="locale">
+      <option name="closed" value="true" />
+      <created>1706486082273</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1706486082273</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,7 +632,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="testimonials-v3" />
     <MESSAGE value="call-to-action-v2" />
     <MESSAGE value="call-to-action-v3" />
     <MESSAGE value="faq-v2" />
@@ -653,6 +656,7 @@
     <MESSAGE value="hideWhenVariants" />
     <MESSAGE value="fixed hideWhenVariants" />
     <MESSAGE value="country, variant" />
-    <option name="LAST_COMMIT_MESSAGE" value="country, variant" />
+    <MESSAGE value="locale" />
+    <option name="LAST_COMMIT_MESSAGE" value="locale" />
   </component>
 </project>
