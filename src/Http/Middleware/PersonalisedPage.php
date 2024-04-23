@@ -4,6 +4,7 @@ namespace Atin\LaravelPages\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use Stevebauman\Location\Facades\Location;
 use Illuminate\Support\Str;
 
@@ -18,9 +19,10 @@ class PersonalisedPage
                 cookie()->queue(cookie('country', Str::lower(Str::limit($request->get('country'), 2, '')), $cookieLifeInMinutes));
             } elseif (
                 ! $request->cookie('country')
-                && ($country = is_object(Location::get($request->ip())) ? Location::get($request->ip())->countryCode : null)
+                && ($country = is_object(Location::get($request->ip())) ? Str::lower(Str::limit(Location::get($request->ip())->countryCode, 2, '')) : null)
             ) {
-                cookie()->queue(cookie('country', Str::lower(Str::limit($country, 2, '')), $cookieLifeInMinutes));
+                cookie()->queue(cookie('country', $country, $cookieLifeInMinutes));
+                Session::put('country', $country);
             }
 
             if ($request->has('variant')) {
