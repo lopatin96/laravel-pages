@@ -14,7 +14,7 @@ class PersonalisedPage
     {
         $cookieLifeInMinutes = config('laravel-pages.cookie_life_in_minutes', 43200);
 
-        if ($request->is('/')) {
+        if (array_key_exists($request->path(), config('laravel-navigation.header'))) {
             if ($request->has('country')) {
                 cookie()->queue(cookie('country', Str::lower(Str::limit($request->get('country'), 2, '')), $cookieLifeInMinutes));
             } elseif (
