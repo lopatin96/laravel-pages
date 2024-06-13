@@ -31,7 +31,7 @@
             <h3 class="mb-6 text-lg font-bold font-heading">
                 “{{ __($title) }}”
             </h3>
-            <p class="text-lg font-medium">
+            <p class="text-lg text-gray-700 leading-normal italic">
                 {{ __($text) }}
             </p>
         </div>
