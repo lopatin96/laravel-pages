@@ -15,17 +15,19 @@ class PersonalisedPage
         if (auth()->check()) {
             return $next($request);
         }
-        
-        $cookieLifeInMinutes = config('laravel-pages.cookie_life_in_minutes', 43200);
 
+        $cookieLifeInMinutes = config('laravel-pages.cookie_life_in_minutes', 43200);
+        
         if ($request->has('country')) {
             cookie()->queue(cookie('country', Str::lower(Str::limit($request->get('country'), 2, '')), $cookieLifeInMinutes));
-        } elseif (
-            ! $request->cookie('country')
-            && ($country = is_object(Location::get($request->ip())) ? Str::lower(Str::limit(Location::get($request->ip())->countryCode, 2, '')) : null)
-        ) {
-            cookie()->queue(cookie('country', $country, $cookieLifeInMinutes));
-            Session::put('country', $country);
+        } elseif (! $request->cookie('country')) {
+            if ($country = is_object(Location::get($request->ip())) ? Str::lower(Str::limit(Location::get($request->ip())->countryCode, 2, '')) : null) {
+                cookie()->queue(cookie('country', $country, $cookieLifeInMinutes));
+                Session::put('country', $country);
+            } else if ($country = array_search(request()->path(), config('laravel-lang-switcher.countries_to_locales'))) {
+                cookie()->queue(cookie('country', $country, $cookieLifeInMinutes));
+                Session::put('country', $country);
+            }
         }
 
         if ($request->has('variant')) {
