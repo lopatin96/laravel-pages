@@ -21,8 +21,8 @@ For each page create a folder. For example, for ```index.php``` page create ```a
 #### Variables
 Specify main variables (main colors, etc.)
 ```php
-'header_path' => 'layouts.header',
-    'footer_path' => 'layouts.footer',
+'header_path' => 'sections.header',
+    'footer_path' => 'sections.footer',
 
     // Colors; Add all values to tailwind.config.js as `safelist` under `module.exports`
     'gradient_from' => 'from-zinc-100',
