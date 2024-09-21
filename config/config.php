@@ -5,8 +5,8 @@ use Atin\LaravelPages\Enums\Gate;
 return [
     'cookie_life_in_minutes' => 43200,
 
-    'header_path' => 'layouts.header',
-    'footer_path' => 'layouts.footer',
+    'header_path' => 'sections.header',
+    'footer_path' => 'sections.footer',
 
     // Colors; Add all values to tailwind.config.js as `safelist` under `module.exports`
     'gradient_from' => 'from-zinc-100',
