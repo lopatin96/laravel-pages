@@ -10,9 +10,7 @@
     @endphp
 
     @if(config("laravel-pages.pages.$page.sections.main"))
-        <div
-            class="bg-gradient-to-r {{ config('laravel-pages.gradient_from') }} {{ config('laravel-pages.gradient_to') }} animate-gradient-x lg:h-screen"
-        >
+        <div class="bg-gradient-to-r {{ config('laravel-pages.gradient_from') }} {{ config('laravel-pages.gradient_to') }} animate-gradient-x lg:h-screen">
             <div
                 x-data="{ lgHScreen: window.innerWidth / window.innerHeight < 2.2 }"
                 @resize.window="lgHScreen = window.innerWidth / window.innerHeight < 2.2"
