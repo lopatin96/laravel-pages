@@ -13,20 +13,22 @@
         <div
             x-data="{ lgHScreen: window.innerWidth / window.innerHeight < 2.2 }"
             @resize.window="lgHScreen = window.innerWidth / window.innerHeight < 2.2"
-            class="flex flex-col bg-gradient-to-r {{ config('laravel-pages.gradient_from') }} {{ config('laravel-pages.gradient_to') }} animate-gradient-x lg:h-screen bg-grid-background bg-grid-size"
+            class="flex flex-col bg-gradient-to-r {{ config('laravel-pages.gradient_from') }} {{ config('laravel-pages.gradient_to') }} animate-gradient-x lg:h-screen"
             :class="{'lg:h-screen': lgHScreen}"
         >
-            @include(config('laravel-pages.header_path'), ['showLinks' => true])
+            <div class="bg-grid-background bg-grid-size">
+                @include(config('laravel-pages.header_path'), ['showLinks' => true])
 
-            @if(
-                isset($variant)
-                && array_key_exists('variants', config("laravel-pages.pages.$page.sections.main"))
-                && in_array($variant, config("laravel-pages.pages.$page.sections.main.variants"))
-            )
-                @include("pages.$page.$variantPrefix" . config("laravel-pages.pages.$page.sections.main.name"))
-            @else
-                @include("pages.$page." . config("laravel-pages.pages.$page.sections.main.name"))
-            @endif
+                @if(
+                    isset($variant)
+                    && array_key_exists('variants', config("laravel-pages.pages.$page.sections.main"))
+                    && in_array($variant, config("laravel-pages.pages.$page.sections.main.variants"))
+                )
+                    @include("pages.$page.$variantPrefix" . config("laravel-pages.pages.$page.sections.main.name"))
+                @else
+                    @include("pages.$page." . config("laravel-pages.pages.$page.sections.main.name"))
+                @endif
+            </div>
         </div>
     @else
         @include(config('laravel-pages.header_path'), ['showLinks' => true])
