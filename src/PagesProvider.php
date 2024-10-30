@@ -3,6 +3,8 @@
 namespace Atin\LaravelPages;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Auth\Events\Registered;
+
 
 class PagesProvider extends ServiceProvider
 {
@@ -13,6 +15,12 @@ class PagesProvider extends ServiceProvider
 
     public function boot()
     {
+        \Event::listen(Registered::class, static function ($event) {
+            $event->user->forceFill([
+                'country' => request()->cookie('country'),
+            ])->save();
+        });
+
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
 
         $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-pages');

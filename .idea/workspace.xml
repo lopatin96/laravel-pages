@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="bg-grid-background bg-grid-size">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="87f95647-3a5d-4138-928a-5886a1891005" name="Changes" comment="remove variant and keyword columns" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,29 +158,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vladyslavlopatin/Packages/laravel-pages&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/vladyslavlopatin/Packages/laravel-pages/database/migrations",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/database/migrations" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/Http" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/resources/views/welcome-page/main/v1" />
-      <recent name="$PROJECT_DIR$/lang/en" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lang/en/index" />
@@ -255,6 +253,7 @@
       <workItem from="1728729631175" duration="113000" />
       <workItem from="1728730001803" duration="3540000" />
       <workItem from="1729968742368" duration="53000" />
+      <workItem from="1730241092237" duration="845000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1681077709690</created>
@@ -473,14 +472,6 @@
       <option name="project" value="LOCAL" />
       <updated>1681866108187</updated>
     </task>
-    <task id="LOCAL-00038" summary="fixed lg:h-screen">
-      <option name="closed" value="true" />
-      <created>1696102321109</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1696102321109</updated>
-    </task>
     <task id="LOCAL-00039" summary="laravel-pages">
       <option name="closed" value="true" />
       <created>1700418607956</created>
@@ -617,7 +608,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728734676371</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="remove variant and keyword columns">
+      <option name="closed" value="true" />
+      <created>1730241356812</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1730241356812</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +637,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="faq-v2" />
     <MESSAGE value="fix mailto" />
     <MESSAGE value="fixed config" />
     <MESSAGE value="fixed route" />
@@ -663,6 +661,7 @@
     <MESSAGE value="locale" />
     <MESSAGE value="change locale and others on other pages" />
     <MESSAGE value="bg-grid-background bg-grid-size" />
-    <option name="LAST_COMMIT_MESSAGE" value="bg-grid-background bg-grid-size" />
+    <MESSAGE value="remove variant and keyword columns" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove variant and keyword columns" />
   </component>
 </project>
