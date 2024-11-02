@@ -23,7 +23,7 @@
                         </div>
                     </span>
                 </div>
-                <h1 class="mb-6 text-3xl md:text-3xl lg:text-4xl font-extrabold font-heading">
+                <h1 class="mb-6 text-3xl md:text-3xl lg:text-4xl font-extrabold font-heading text-balance">
                     <span class="bg-black text-white text-5xl md:text-6xl">
                         <span class="relative z-10">
                             {!! __('laravel-welcome-page::main-v1.title') !!}
@@ -34,7 +34,7 @@
                         @include('laravel-welcome-page::welcome-page.main.v1.typed')
                     </span>
                 </h1>
-                <p class="mb-10 md:mb-24 text-lg lg:max-w-md selection:bg-black selection:text-white">
+                <p class="mb-10 md:mb-24 text-lg lg:max-w-md text-balance selection:bg-black selection:text-white">
                     {!! __('laravel-welcome-page::main-v1.text') !!}
                 </p>
                 <div class="flex flex-col sm:flex-row space-y-5 sm:space-y-0 items-center">
