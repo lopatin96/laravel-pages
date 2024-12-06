@@ -19,6 +19,8 @@ class PagesProvider extends ServiceProvider
             $event->user->forceFill([
                 'country' => request()->cookie('country'),
             ])->save();
+
+            cookie()->queue(cookie()->forget('country'));
         });
 
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
