@@ -14,7 +14,7 @@
             <div
                 x-data="{ lgHScreen: window.innerWidth / window.innerHeight < 2.2 }"
                 @resize.window="lgHScreen = window.innerWidth / window.innerHeight < 2.2"
-                class="flex flex-col  bg-grid-background bg-grid-size"
+                class="flex flex-col bg-grid-background bg-grid-size"
                 :class="{'lg:h-screen': lgHScreen}"
             >
                 @include(config('laravel-pages.header_path'), ['showLinks' => true])
